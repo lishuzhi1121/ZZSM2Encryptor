@@ -1,0 +1,6 @@
+framework module ZZSM2Encryptor {
+  umbrella header "ZZSM2Encryptor.h"
+
+  export *
+  module * { export * }
+}

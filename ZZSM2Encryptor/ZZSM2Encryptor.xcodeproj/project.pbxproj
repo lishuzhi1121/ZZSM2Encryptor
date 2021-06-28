@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B17272AF2689AEE7000DB07B /* ZZSM2Encryptor_Package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B17272B02689AEE7000DB07B /* Build configuration list for PBXAggregateTarget "ZZSM2Encryptor_Package" */;
+			buildPhases = (
+				B17272B32689AEEE000DB07B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = ZZSM2Encryptor_Package;
+			productName = ZZSM2Encryptor_Package;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		B172724026897A7F000DB07B /* ZZSM2Encryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B172723626897A7F000DB07B /* ZZSM2Encryptor.framework */; };
+		B172724526897A7F000DB07B /* ZZSM2EncryptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B172724426897A7F000DB07B /* ZZSM2EncryptorTests.m */; };
+		B172726526897B11000DB07B /* ZZSM2Cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = B172725226897B11000DB07B /* ZZSM2Cipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B172726626897B11000DB07B /* ZZSM2Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = B172725326897B11000DB07B /* ZZSM2Cipher.m */; };
+		B172726726897B11000DB07B /* ZZBigInt.mm in Sources */ = {isa = PBXBuildFile; fileRef = B172725526897B11000DB07B /* ZZBigInt.mm */; };
+		B172726826897B11000DB07B /* ZZBigInt.h in Headers */ = {isa = PBXBuildFile; fileRef = B172725626897B11000DB07B /* ZZBigInt.h */; };
+		B172726926897B11000DB07B /* ZZSM3Digest.h in Headers */ = {isa = PBXBuildFile; fileRef = B172725826897B11000DB07B /* ZZSM3Digest.h */; };
+		B172726A26897B11000DB07B /* ZZSM3Digest.mm in Sources */ = {isa = PBXBuildFile; fileRef = B172725926897B11000DB07B /* ZZSM3Digest.mm */; };
+		B172726B26897B11000DB07B /* ZZECFieldElementFp.m in Sources */ = {isa = PBXBuildFile; fileRef = B172725B26897B11000DB07B /* ZZECFieldElementFp.m */; };
+		B172726C26897B11000DB07B /* ZZECCurveFp.m in Sources */ = {isa = PBXBuildFile; fileRef = B172725C26897B11000DB07B /* ZZECCurveFp.m */; };
+		B172726D26897B11000DB07B /* ZZECPointFp.h in Headers */ = {isa = PBXBuildFile; fileRef = B172725D26897B11000DB07B /* ZZECPointFp.h */; };
+		B172726E26897B11000DB07B /* ZZECFieldElementFp.h in Headers */ = {isa = PBXBuildFile; fileRef = B172725E26897B11000DB07B /* ZZECFieldElementFp.h */; };
+		B172726F26897B11000DB07B /* ZZECPointFp.m in Sources */ = {isa = PBXBuildFile; fileRef = B172725F26897B11000DB07B /* ZZECPointFp.m */; };
+		B172727026897B11000DB07B /* ZZECCurveFp.h in Headers */ = {isa = PBXBuildFile; fileRef = B172726026897B11000DB07B /* ZZECCurveFp.h */; };
+		B172727626897CB8000DB07B /* ZZSM2Encryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = B172727426897CB8000DB07B /* ZZSM2Encryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B172727726897CB8000DB07B /* ZZSM2Encryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B172727526897CB8000DB07B /* ZZSM2Encryptor.m */; };
+		B172727F26899F96000DB07B /* ZZSM2Util.h in Headers */ = {isa = PBXBuildFile; fileRef = B172727D26899F96000DB07B /* ZZSM2Util.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B172728026899F96000DB07B /* ZZSM2Util.m in Sources */ = {isa = PBXBuildFile; fileRef = B172727E26899F96000DB07B /* ZZSM2Util.m */; };
+		B17272862689A247000DB07B /* ZZSM2Cipher+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B17272852689A247000DB07B /* ZZSM2Cipher+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B17272AD2689AE19000DB07B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B17272AC2689AE19000DB07B /* libc++.tbd */; };
+		B17272AE2689AE3C000DB07B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B17272AC2689AE19000DB07B /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B172724126897A7F000DB07B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B172722D26897A7F000DB07B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B172723526897A7F000DB07B;
+			remoteInfo = ZZSM2Encryptor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B172723626897A7F000DB07B /* ZZSM2Encryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZZSM2Encryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B172723A26897A7F000DB07B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B172723F26897A7F000DB07B /* ZZSM2EncryptorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZSM2EncryptorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B172724426897A7F000DB07B /* ZZSM2EncryptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZSM2EncryptorTests.m; sourceTree = "<group>"; };
+		B172724626897A7F000DB07B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B172725226897B11000DB07B /* ZZSM2Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSM2Cipher.h; sourceTree = "<group>"; };
+		B172725326897B11000DB07B /* ZZSM2Cipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSM2Cipher.m; sourceTree = "<group>"; };
+		B172725526897B11000DB07B /* ZZBigInt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZZBigInt.mm; sourceTree = "<group>"; };
+		B172725626897B11000DB07B /* ZZBigInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZBigInt.h; sourceTree = "<group>"; };
+		B172725826897B11000DB07B /* ZZSM3Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSM3Digest.h; sourceTree = "<group>"; };
+		B172725926897B11000DB07B /* ZZSM3Digest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZZSM3Digest.mm; sourceTree = "<group>"; };
+		B172725B26897B11000DB07B /* ZZECFieldElementFp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZECFieldElementFp.m; sourceTree = "<group>"; };
+		B172725C26897B11000DB07B /* ZZECCurveFp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZECCurveFp.m; sourceTree = "<group>"; };
+		B172725D26897B11000DB07B /* ZZECPointFp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZECPointFp.h; sourceTree = "<group>"; };
+		B172725E26897B11000DB07B /* ZZECFieldElementFp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZECFieldElementFp.h; sourceTree = "<group>"; };
+		B172725F26897B11000DB07B /* ZZECPointFp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZECPointFp.m; sourceTree = "<group>"; };
+		B172726026897B11000DB07B /* ZZECCurveFp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZECCurveFp.h; sourceTree = "<group>"; };
+		B172727426897CB8000DB07B /* ZZSM2Encryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSM2Encryptor.h; sourceTree = "<group>"; };
+		B172727526897CB8000DB07B /* ZZSM2Encryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZSM2Encryptor.m; sourceTree = "<group>"; };
+		B172727D26899F96000DB07B /* ZZSM2Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSM2Util.h; sourceTree = "<group>"; };
+		B172727E26899F96000DB07B /* ZZSM2Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZSM2Util.m; sourceTree = "<group>"; };
+		B17272852689A247000DB07B /* ZZSM2Cipher+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZZSM2Cipher+Private.h"; sourceTree = "<group>"; };
+		B17272AC2689AE19000DB07B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B172723326897A7F000DB07B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17272AD2689AE19000DB07B /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B172723C26897A7F000DB07B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17272AE2689AE3C000DB07B /* libc++.tbd in Frameworks */,
+				B172724026897A7F000DB07B /* ZZSM2Encryptor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B172722C26897A7F000DB07B = {
+			isa = PBXGroup;
+			children = (
+				B172723826897A7F000DB07B /* ZZSM2Encryptor */,
+				B172724326897A7F000DB07B /* ZZSM2EncryptorTests */,
+				B172723726897A7F000DB07B /* Products */,
+				B17272AB2689AE19000DB07B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B172723726897A7F000DB07B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B172723626897A7F000DB07B /* ZZSM2Encryptor.framework */,
+				B172723F26897A7F000DB07B /* ZZSM2EncryptorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B172723826897A7F000DB07B /* ZZSM2Encryptor */ = {
+			isa = PBXGroup;
+			children = (
+				B172727426897CB8000DB07B /* ZZSM2Encryptor.h */,
+				B172727526897CB8000DB07B /* ZZSM2Encryptor.m */,
+				B172727826897E02000DB07B /* Utils */,
+				B172725126897B11000DB07B /* SM2 */,
+				B172725726897B11000DB07B /* SM3 */,
+				B172725A26897B11000DB07B /* EC_Fp */,
+				B172725426897B11000DB07B /* BigInt */,
+				B172723A26897A7F000DB07B /* Info.plist */,
+			);
+			path = ZZSM2Encryptor;
+			sourceTree = "<group>";
+		};
+		B172724326897A7F000DB07B /* ZZSM2EncryptorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B172724426897A7F000DB07B /* ZZSM2EncryptorTests.m */,
+				B172724626897A7F000DB07B /* Info.plist */,
+			);
+			path = ZZSM2EncryptorTests;
+			sourceTree = "<group>";
+		};
+		B172725126897B11000DB07B /* SM2 */ = {
+			isa = PBXGroup;
+			children = (
+				B172725226897B11000DB07B /* ZZSM2Cipher.h */,
+				B172725326897B11000DB07B /* ZZSM2Cipher.m */,
+				B17272852689A247000DB07B /* ZZSM2Cipher+Private.h */,
+			);
+			path = SM2;
+			sourceTree = "<group>";
+		};
+		B172725426897B11000DB07B /* BigInt */ = {
+			isa = PBXGroup;
+			children = (
+				B172725626897B11000DB07B /* ZZBigInt.h */,
+				B172725526897B11000DB07B /* ZZBigInt.mm */,
+			);
+			path = BigInt;
+			sourceTree = "<group>";
+		};
+		B172725726897B11000DB07B /* SM3 */ = {
+			isa = PBXGroup;
+			children = (
+				B172725826897B11000DB07B /* ZZSM3Digest.h */,
+				B172725926897B11000DB07B /* ZZSM3Digest.mm */,
+			);
+			path = SM3;
+			sourceTree = "<group>";
+		};
+		B172725A26897B11000DB07B /* EC_Fp */ = {
+			isa = PBXGroup;
+			children = (
+				B172726026897B11000DB07B /* ZZECCurveFp.h */,
+				B172725C26897B11000DB07B /* ZZECCurveFp.m */,
+				B172725D26897B11000DB07B /* ZZECPointFp.h */,
+				B172725F26897B11000DB07B /* ZZECPointFp.m */,
+				B172725E26897B11000DB07B /* ZZECFieldElementFp.h */,
+				B172725B26897B11000DB07B /* ZZECFieldElementFp.m */,
+			);
+			path = EC_Fp;
+			sourceTree = "<group>";
+		};
+		B172727826897E02000DB07B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B172727D26899F96000DB07B /* ZZSM2Util.h */,
+				B172727E26899F96000DB07B /* ZZSM2Util.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B17272AB2689AE19000DB07B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B17272AC2689AE19000DB07B /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B172723126897A7F000DB07B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B172727626897CB8000DB07B /* ZZSM2Encryptor.h in Headers */,
+				B172727026897B11000DB07B /* ZZECCurveFp.h in Headers */,
+				B172727F26899F96000DB07B /* ZZSM2Util.h in Headers */,
+				B17272862689A247000DB07B /* ZZSM2Cipher+Private.h in Headers */,
+				B172726526897B11000DB07B /* ZZSM2Cipher.h in Headers */,
+				B172726D26897B11000DB07B /* ZZECPointFp.h in Headers */,
+				B172726E26897B11000DB07B /* ZZECFieldElementFp.h in Headers */,
+				B172726926897B11000DB07B /* ZZSM3Digest.h in Headers */,
+				B172726826897B11000DB07B /* ZZBigInt.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B172723526897A7F000DB07B /* ZZSM2Encryptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B172724A26897A7F000DB07B /* Build configuration list for PBXNativeTarget "ZZSM2Encryptor" */;
+			buildPhases = (
+				B172723126897A7F000DB07B /* Headers */,
+				B172723226897A7F000DB07B /* Sources */,
+				B172723326897A7F000DB07B /* Frameworks */,
+				B172723426897A7F000DB07B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZZSM2Encryptor;
+			productName = ZZSM2Encryptor;
+			productReference = B172723626897A7F000DB07B /* ZZSM2Encryptor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B172723E26897A7F000DB07B /* ZZSM2EncryptorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B172724D26897A7F000DB07B /* Build configuration list for PBXNativeTarget "ZZSM2EncryptorTests" */;
+			buildPhases = (
+				B172723B26897A7F000DB07B /* Sources */,
+				B172723C26897A7F000DB07B /* Frameworks */,
+				B172723D26897A7F000DB07B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B172724226897A7F000DB07B /* PBXTargetDependency */,
+			);
+			name = ZZSM2EncryptorTests;
+			productName = ZZSM2EncryptorTests;
+			productReference = B172723F26897A7F000DB07B /* ZZSM2EncryptorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B172722D26897A7F000DB07B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B172723526897A7F000DB07B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B172723E26897A7F000DB07B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B17272AF2689AEE7000DB07B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = B172723026897A7F000DB07B /* Build configuration list for PBXProject "ZZSM2Encryptor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B172722C26897A7F000DB07B;
+			productRefGroup = B172723726897A7F000DB07B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B172723526897A7F000DB07B /* ZZSM2Encryptor */,
+				B172723E26897A7F000DB07B /* ZZSM2EncryptorTests */,
+				B17272AF2689AEE7000DB07B /* ZZSM2Encryptor_Package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B172723426897A7F000DB07B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B172723D26897A7F000DB07B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B17272B32689AEEE000DB07B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/sh\n\nFMK_NAME=${PROJECT_NAME}\n\nINSTALL_BASE_DIR=${PROJECT_DIR}/Package\nINSTALL_DIR=${INSTALL_BASE_DIR}/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Step 1. Build Device and Simulator versions\n\nxcodebuild -target \"${FMK_NAME}\" clean\n\nxcodebuild -target \"${FMK_NAME}\" -configuration \"Release\" -arch \"arm64\" -arch \"armv7\" -arch \"armv7s\" only_active_arch=no defines_module=yes BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -sdk \"iphoneos\" build\nxcodebuild -target \"${FMK_NAME}\" -configuration \"Release\" -arch \"x86_64\" -arch \"i386\" only_active_arch=no defines_module=yes BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -sdk \"iphonesimulator\" build\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -rf \"${WRK_DIR}\"\n\n# remove PrivateHeaders\nrm -rf \"${INSTALL_DIR}/PrivateHeaders\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B172723226897A7F000DB07B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B172726C26897B11000DB07B /* ZZECCurveFp.m in Sources */,
+				B172726B26897B11000DB07B /* ZZECFieldElementFp.m in Sources */,
+				B172727726897CB8000DB07B /* ZZSM2Encryptor.m in Sources */,
+				B172728026899F96000DB07B /* ZZSM2Util.m in Sources */,
+				B172726A26897B11000DB07B /* ZZSM3Digest.mm in Sources */,
+				B172726626897B11000DB07B /* ZZSM2Cipher.m in Sources */,
+				B172726726897B11000DB07B /* ZZBigInt.mm in Sources */,
+				B172726F26897B11000DB07B /* ZZECPointFp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B172723B26897A7F000DB07B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B172724526897A7F000DB07B /* ZZSM2EncryptorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B172724226897A7F000DB07B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B172723526897A7F000DB07B /* ZZSM2Encryptor */;
+			targetProxy = B172724126897A7F000DB07B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B172724826897A7F000DB07B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B172724926897A7F000DB07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B172724B26897A7F000DB07B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				DYLIB_INSTALL_NAME_BASE = "";
+				INFOPLIST_FILE = ZZSM2Encryptor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_object;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quvideo.ZZSM2Encryptor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B172724C26897A7F000DB07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				DYLIB_INSTALL_NAME_BASE = "";
+				INFOPLIST_FILE = ZZSM2Encryptor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_object;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quvideo.ZZSM2Encryptor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B172724E26897A7F000DB07B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q44Z5857F;
+				INFOPLIST_FILE = ZZSM2EncryptorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quvideo.ZZSM2EncryptorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B172724F26897A7F000DB07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q44Z5857F;
+				INFOPLIST_FILE = ZZSM2EncryptorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quvideo.ZZSM2EncryptorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B17272B12689AEE7000DB07B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q44Z5857F;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B17272B22689AEE7000DB07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q44Z5857F;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B172723026897A7F000DB07B /* Build configuration list for PBXProject "ZZSM2Encryptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B172724826897A7F000DB07B /* Debug */,
+				B172724926897A7F000DB07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B172724A26897A7F000DB07B /* Build configuration list for PBXNativeTarget "ZZSM2Encryptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B172724B26897A7F000DB07B /* Debug */,
+				B172724C26897A7F000DB07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B172724D26897A7F000DB07B /* Build configuration list for PBXNativeTarget "ZZSM2EncryptorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B172724E26897A7F000DB07B /* Debug */,
+				B172724F26897A7F000DB07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17272B02689AEE7000DB07B /* Build configuration list for PBXAggregateTarget "ZZSM2Encryptor_Package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17272B12689AEE7000DB07B /* Debug */,
+				B17272B22689AEE7000DB07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B172722D26897A7F000DB07B /* Project object */;
+}
