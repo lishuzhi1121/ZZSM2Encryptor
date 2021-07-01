@@ -412,15 +412,15 @@
         NSString *rtHex = [signHex substringWithRange:NSMakeRange(0, len)];
         ZZBigInt *rt = [[ZZBigInt alloc] initWithString:rtHex radix:16];
         // 检验r′ ∈[1,n-1]是否成立
-        if ([rt compare:[ZZBigInt one]] == NSOrderedDescending
-            || [rt compare:n_1] == NSOrderedAscending) {
+        if ([rt compare:[ZZBigInt one]] == NSOrderedAscending
+            || [rt compare:n_1] == NSOrderedDescending) {
             return NO;
         }
         // 检验s′ ∈[1,n-1]是否成立
         NSString *stHex = [signHex substringWithRange:NSMakeRange(len, len)];
         ZZBigInt *st = [[ZZBigInt alloc] initWithString:stHex radix:16];
-        if ([st compare:[ZZBigInt one]] == NSOrderedDescending
-            || [st compare:n_1] == NSOrderedAscending) {
+        if ([st compare:[ZZBigInt one]] == NSOrderedAscending
+            || [st compare:n_1] == NSOrderedDescending) {
             return NO;
         }
         

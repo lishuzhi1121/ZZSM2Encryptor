@@ -229,6 +229,10 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - 其他运算
 
 /// 大数比较
+/// If:
+///     a < b   then return NSOrderedAscending. The left operand is smaller than the right operand.
+///     a > b   then return NSOrderedDescending. The left operand is greater than the right operand.
+///     a == b  then return NSOrderedSame. The operands are equal.
 /// @param value 大数
 - (NSComparisonResult)compare:(ZZBigInt *)value;
 

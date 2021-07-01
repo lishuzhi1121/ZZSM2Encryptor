@@ -6204,9 +6204,9 @@ using namespace com::zzspace::bigint;
     int cmpRes = mp_cmp(&_value, &value->_value);
     switch (cmpRes) {
         case MP_GT:
-            return NSOrderedAscending;
-        case MP_LT:
             return NSOrderedDescending;
+        case MP_LT:
+            return NSOrderedAscending;
         default:
             return NSOrderedSame;
     }
