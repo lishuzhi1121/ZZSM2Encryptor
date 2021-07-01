@@ -9,6 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 公钥key
+FOUNDATION_EXPORT NSString *const ZZSM2_PUBLIC_KEY;
+/// 私钥key
+FOUNDATION_EXPORT NSString *const ZZSM2_PRIVATE_KEY;
+
 @interface ZZSM2Cipher : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
@@ -45,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - 随机生成公钥私钥
 
 /// 随机生成公钥私钥, 公钥前缀04表示未压缩
-/// @return @{@"publicKey": @"04xxxxxxxx", @"privateKey": @"xxxxxxxxx"}
+/// @return @{ZZSM2_PUBLIC_KEY: @"04xxxxxxxx", ZZSM2_PRIVATE_KEY: @"xxxxxxxxx"}
 - (NSDictionary<NSString *, NSString *> *)generateKeyPairHex;
 
 @end

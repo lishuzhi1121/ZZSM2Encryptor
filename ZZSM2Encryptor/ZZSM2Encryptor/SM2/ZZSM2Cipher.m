@@ -12,6 +12,11 @@
 #import "ZZECFieldElementFp.h"
 #import "ZZSM2Util.h"
 
+/// 公钥key
+NSString *const ZZSM2_PUBLIC_KEY  = @"ZZSM2_PUBLIC_KEY";
+/// 私钥key
+NSString *const ZZSM2_PRIVATE_KEY = @"ZZSM2_PRIVATE_KEY";
+
 /// 椭圆曲线类型定义
 typedef NS_ENUM(NSUInteger, ZZECCMode) {
     ZZECCModeFp = 0, // Fp(素数域)椭圆曲线 y^2 = x^3 + ax + b
@@ -223,10 +228,10 @@ typedef NS_ENUM(NSUInteger, ZZECCMode) {
         
         NSMutableDictionary *resDict = [NSMutableDictionary dictionaryWithCapacity:2];
         if ([publicKey isKindOfClass:[NSString class]] && publicKey.length > 0) {
-            [resDict setObject:publicKey forKey:@"publicKey"];
+            [resDict setObject:publicKey forKey:ZZSM2_PUBLIC_KEY];
         }
         if ([privateKey isKindOfClass:[NSString class]] && privateKey.length > 0) {
-            [resDict setObject:privateKey forKey:@"privateKey"];
+            [resDict setObject:privateKey forKey:ZZSM2_PRIVATE_KEY];
         }
         
         return [resDict copy];

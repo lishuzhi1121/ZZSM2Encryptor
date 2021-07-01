@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ZZSM2EncryptorDemo/ZZSM2EncryptorDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ZZSM2Encryptor/ZZSM2Encryptor.xcodeproj">
+   </FileRef>
+</Workspace>

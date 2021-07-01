@@ -5798,7 +5798,7 @@ using namespace com::zzspace::bigint;
 }
 
 - (instancetype)initWithBigInteger:(ZZBigInt *)value {
-    if (self = [super init]) {
+    if (self = [self init]) {
         if (value) {
             mp_init_copy(&_value, &value->_value);
         }
@@ -5821,7 +5821,7 @@ using namespace com::zzspace::bigint;
         return nil;
     }
     
-    if (self = [super init]) {
+    if (self = [self init]) {
         const char *cStr = [valueString cStringUsingEncoding:NSUTF8StringEncoding];
         mp_read_radix(&_value, cStr, radix);
     }
@@ -5829,7 +5829,7 @@ using namespace com::zzspace::bigint;
 }
 
 - (instancetype)initWithRandomPremeBits:(int)bits {
-    if (self = [super init]) {
+    if (self = [self init]) {
         int err = mp_prime_random_ex(
                                      &_value,
                                      8,
@@ -5858,7 +5858,7 @@ using namespace com::zzspace::bigint;
 }
 
 - (instancetype)initWithBytes:(const void *)bytes size:(int)size {
-    if (self = [super init]) {
+    if (self = [self init]) {
         int err = mp_read_signed_bin(&_value, (const unsigned char *)bytes, size);
         if (err != MP_OKAY) {
             return nil;
@@ -5868,13 +5868,17 @@ using namespace com::zzspace::bigint;
 }
 
 - (instancetype)initWithUnsignedBytes:(const void *)bytes size:(int)size {
-    if (self = [super init]) {
+    if (self = [self init]) {
         int err = mp_read_unsigned_bin(&_value, (const unsigned char *)bytes, size);
         if (err != MP_OKAY) {
             return nil;
         }
     }
     return self;
+}
+
+- (void)dealloc {
+    mp_clear(&_value);
 }
 
 /// 校验字符串是否能被解析为大数

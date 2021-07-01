@@ -133,7 +133,7 @@
     } else {
         C = [NSString stringWithFormat:@"%@%@%@", C1, C3, C2];
     }
-    NSLog(@"#### SM2 Encrypted: %@", C);
+//    NSLog(@"#### SM2 Encrypted: %@", C);
     return [ZZSM2Util dataByHexString:C];
 }
 
@@ -236,7 +236,7 @@
     // y2
     NSString *kC1PointY = [ZZSM2Util leftPad:[[[kC1Point getY] toBigInteger] toString:16] num:pointLen / 2];
     NSString *kC1 = [NSString stringWithFormat:@"%@%@", kC1PointX, kC1PointY];
-    NSLog(@"#### kC1: %@", kC1);
+//    NSLog(@"#### kC1: %@", kC1);
     
     NSData *kC1PointXData = [ZZSM2Util dataByHexString:kC1PointX];
     NSData *kC1PointYData = [ZZSM2Util dataByHexString:kC1PointY];
