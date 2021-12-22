@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <ZZSM2Encryptor/ZZSM2Cipher.h>
 #import <ZZSM2Encryptor/ZZSM2Util.h>
+#import <ZZSM2Encryptor/ZZSM4Encryptor.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -102,6 +103,34 @@ typedef NS_ENUM(NSUInteger, ZZSM2CipherMode) {
 /// 生成 SM3 摘要
 /// @param data 信息数据
 + (NSData *)sm3HashWithData:(NSData *)data;
+
+
+#pragma mark - SM4加解密
+
+/// SM4 字符串加密
+/// @param plainText 明文字符串
+/// @param keyString 密钥字符串(keyString不可为空, 且必须是16个字节长度)
+/// @param mode 工作方式
+/// @param padding 填充方式
+/// @param ivString 填充向量（当mode ==  ZZSM4CryptModeCBC 时, iv不可为空, 且必须是16个字节长度）
++ (NSData *)sm4EncryptText:(NSString *)plainText
+                 keyString:(NSString *)keyString
+                 cryptMode:(ZZSM4CryptMode)mode
+              cryptPadding:(ZZSM4CryptPadding)padding
+                optionalIV:(NSString *)ivString;
+
+/// SM4 字符串解密
+/// @param hexCipherText 16进制密文字符串
+/// @param keyString 密钥字符串(keyString不可为空, 且必须是16个字节长度)
+/// @param mode 工作方式
+/// @param padding 填充方式
+/// @param ivString 填充向量（当mode ==  ZZSM4CryptModeCBC 时, iv不可为空, 且必须是16个字节长度）
++ (NSData *)sm4DecryptText:(NSString *)hexCipherText
+                 keyString:(NSString *)keyString
+                 cryptMode:(ZZSM4CryptMode)mode
+              cryptPadding:(ZZSM4CryptPadding)padding
+                optionalIV:(NSString *)ivString;
+
 
 @end
 

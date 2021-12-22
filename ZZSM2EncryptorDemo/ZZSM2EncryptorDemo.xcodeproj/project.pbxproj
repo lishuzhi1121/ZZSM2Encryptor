@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,11 +15,11 @@
 		B17272D0268C1023000DB07B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17272CE268C1023000DB07B /* LaunchScreen.storyboard */; };
 		B17272D3268C1023000DB07B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B17272D2268C1023000DB07B /* main.m */; };
 		B17272DD268C1053000DB07B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B17272DC268C1053000DB07B /* libc++.tbd */; };
-		B17272E6268C10F9000DB07B /* ZZSM2Encryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17272E5268C10F9000DB07B /* ZZSM2Encryptor.framework */; };
 		B17272EF268D6A8F000DB07B /* public_key_prime256v1.pem in Resources */ = {isa = PBXBuildFile; fileRef = B17272E9268D6A8F000DB07B /* public_key_prime256v1.pem */; };
 		B17272F1268D6A8F000DB07B /* public_key_secp256k1.pem in Resources */ = {isa = PBXBuildFile; fileRef = B17272EB268D6A8F000DB07B /* public_key_secp256k1.pem */; };
 		B17272F3268D6A8F000DB07B /* private_key_secp256k1.pem in Resources */ = {isa = PBXBuildFile; fileRef = B17272ED268D6A8F000DB07B /* private_key_secp256k1.pem */; };
 		B17272F4268D6A8F000DB07B /* private_key_prime256v1.pem in Resources */ = {isa = PBXBuildFile; fileRef = B17272EE268D6A8F000DB07B /* private_key_prime256v1.pem */; };
+		B1AE9EAB276CA89600A9E58F /* ZZSM2Encryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1AE9EAA276CA89600A9E58F /* ZZSM2Encryptor.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,11 +36,11 @@
 		B17272D1268C1023000DB07B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B17272D2268C1023000DB07B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B17272DC268C1053000DB07B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		B17272E5268C10F9000DB07B /* ZZSM2Encryptor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZZSM2Encryptor.framework; sourceTree = "<group>"; };
 		B17272E9268D6A8F000DB07B /* public_key_prime256v1.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public_key_prime256v1.pem; sourceTree = "<group>"; };
 		B17272EB268D6A8F000DB07B /* public_key_secp256k1.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public_key_secp256k1.pem; sourceTree = "<group>"; };
 		B17272ED268D6A8F000DB07B /* private_key_secp256k1.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private_key_secp256k1.pem; sourceTree = "<group>"; };
 		B17272EE268D6A8F000DB07B /* private_key_prime256v1.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private_key_prime256v1.pem; sourceTree = "<group>"; };
+		B1AE9EAA276CA89600A9E58F /* ZZSM2Encryptor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZZSM2Encryptor.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/ZZSM2Encryptor-fhkdmutqhjtgqacxnfxqdzakphcm/Build/Products/Debug-iphoneos/ZZSM2Encryptor.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17272E6268C10F9000DB07B /* ZZSM2Encryptor.framework in Frameworks */,
+				B1AE9EAB276CA89600A9E58F /* ZZSM2Encryptor.framework in Frameworks */,
 				B17272DD268C1053000DB07B /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,8 +76,8 @@
 		B17272BF268C1021000DB07B /* ZZSM2EncryptorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B1AE9EAA276CA89600A9E58F /* ZZSM2Encryptor.framework */,
 				B17272E8268D6A8F000DB07B /* PEMFiles */,
-				B17272E5268C10F9000DB07B /* ZZSM2Encryptor.framework */,
 				B17272C0268C1021000DB07B /* AppDelegate.h */,
 				B17272C1268C1021000DB07B /* AppDelegate.m */,
 				B17272C3268C1021000DB07B /* SceneDelegate.h */,

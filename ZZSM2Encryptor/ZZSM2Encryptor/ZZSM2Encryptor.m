@@ -494,4 +494,30 @@
     return [ZZSM3Digest hashData:data];
 }
 
+#pragma mark - SM4加解密
+
++ (NSData *)sm4EncryptText:(NSString *)plainText
+                 keyString:(NSString *)keyString
+                 cryptMode:(ZZSM4CryptMode)mode
+              cryptPadding:(ZZSM4CryptPadding)padding
+                optionalIV:(NSString *)ivString {
+    return [ZZSM4Encryptor sm4EncryptText:plainText
+                                keyString:keyString
+                                cryptMode:mode
+                             cryptPadding:padding
+                               optionalIV:ivString];
+}
+
++ (NSData *)sm4DecryptText:(NSString *)hexCipherText
+                 keyString:(NSString *)keyString
+                 cryptMode:(ZZSM4CryptMode)mode
+              cryptPadding:(ZZSM4CryptPadding)padding
+                optionalIV:(NSString *)ivString {
+    return [ZZSM4Encryptor sm4DecryptText:hexCipherText
+                                keyString:keyString
+                                cryptMode:mode
+                             cryptPadding:padding
+                               optionalIV:ivString];
+}
+
 @end

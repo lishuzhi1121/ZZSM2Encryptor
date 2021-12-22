@@ -111,4 +111,4 @@ openssl ec -in private_key_prime256v1.pem -inform PEM -pubout -outform PEM -out 
 
 ### 3. 其他
 
-该库还提供了国密SM2签名与验签方法、SM3杂凑（哈希）算法的实现，具体参见接口及注释。
+该库还提供了 **国密SM2签名与验签方法** 、 **SM3杂凑（哈希）算法** 以及 **SM4密码算法** 的实现，具体参见接口及注释。

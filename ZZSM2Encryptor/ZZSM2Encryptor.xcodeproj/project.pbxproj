@@ -42,6 +42,8 @@
 		B17272862689A247000DB07B /* ZZSM2Cipher+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B17272852689A247000DB07B /* ZZSM2Cipher+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B17272AD2689AE19000DB07B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B17272AC2689AE19000DB07B /* libc++.tbd */; };
 		B17272AE2689AE3C000DB07B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B17272AC2689AE19000DB07B /* libc++.tbd */; };
+		B1AE9EA8276C397C00A9E58F /* ZZSM4Encryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = B1AE9EA6276C397C00A9E58F /* ZZSM4Encryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1AE9EA9276C397C00A9E58F /* ZZSM4Encryptor.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1AE9EA7276C397C00A9E58F /* ZZSM4Encryptor.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		B172727E26899F96000DB07B /* ZZSM2Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZSM2Util.m; sourceTree = "<group>"; };
 		B17272852689A247000DB07B /* ZZSM2Cipher+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZZSM2Cipher+Private.h"; sourceTree = "<group>"; };
 		B17272AC2689AE19000DB07B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		B1AE9EA6276C397C00A9E58F /* ZZSM4Encryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZSM4Encryptor.h; sourceTree = "<group>"; };
+		B1AE9EA7276C397C00A9E58F /* ZZSM4Encryptor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZZSM4Encryptor.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			children = (
 				B172727426897CB8000DB07B /* ZZSM2Encryptor.h */,
 				B172727526897CB8000DB07B /* ZZSM2Encryptor.m */,
+				B1AE9EA5276C370900A9E58F /* SM4 */,
 				B172727826897E02000DB07B /* Utils */,
 				B172725126897B11000DB07B /* SM2 */,
 				B172725726897B11000DB07B /* SM3 */,
@@ -202,6 +207,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B1AE9EA5276C370900A9E58F /* SM4 */ = {
+			isa = PBXGroup;
+			children = (
+				B1AE9EA6276C397C00A9E58F /* ZZSM4Encryptor.h */,
+				B1AE9EA7276C397C00A9E58F /* ZZSM4Encryptor.mm */,
+			);
+			path = SM4;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -211,6 +225,7 @@
 			files = (
 				B172727626897CB8000DB07B /* ZZSM2Encryptor.h in Headers */,
 				B172727026897B11000DB07B /* ZZECCurveFp.h in Headers */,
+				B1AE9EA8276C397C00A9E58F /* ZZSM4Encryptor.h in Headers */,
 				B172727F26899F96000DB07B /* ZZSM2Util.h in Headers */,
 				B17272862689A247000DB07B /* ZZSM2Cipher+Private.h in Headers */,
 				B172726526897B11000DB07B /* ZZSM2Cipher.h in Headers */,
@@ -345,6 +360,7 @@
 				B172726B26897B11000DB07B /* ZZECFieldElementFp.m in Sources */,
 				B172727726897CB8000DB07B /* ZZSM2Encryptor.m in Sources */,
 				B172728026899F96000DB07B /* ZZSM2Util.m in Sources */,
+				B1AE9EA9276C397C00A9E58F /* ZZSM4Encryptor.mm in Sources */,
 				B172726A26897B11000DB07B /* ZZSM3Digest.mm in Sources */,
 				B172726626897B11000DB07B /* ZZSM2Cipher.m in Sources */,
 				B172726726897B11000DB07B /* ZZBigInt.mm in Sources */,
